@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/payment?serverTimeZone=URC&CharacterEncoding=UTF-8
+    username: root
+    password: alswn
+
+#jsp설정
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+mybatis:
+  mapper-locations: mapper/**/*.xml
